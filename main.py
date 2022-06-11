@@ -1,4 +1,3 @@
-import timeit
 from random import randint, choice
 
 
@@ -73,11 +72,6 @@ def generate_name() -> str:
     return (name + choice(suffix)).capitalize()
 
 
-start_time = timeit.default_timer()
-
-for generated in range(0, 100):
-    print(generate_name())
-
-stop = timeit.default_timer()
-
-print('Time: ', stop - start_time)
+if __name__ == "__main__":
+    for generated in range(0, 100):
+        print(generate_name())

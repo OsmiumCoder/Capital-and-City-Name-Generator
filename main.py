@@ -55,23 +55,24 @@ def generate_name() -> str:
 
     name: str = ""
 
-    consonants_sample = [choice(consonants) for i in range(4)]
-    vowels_sample = [choice(vowels) for i in range(4)]
+    consonants_sample = [choice(consonants) for _ in range(4)]
+    vowels_sample = [choice(vowels) for _ in range(4)]
     consonants_index = 0
     vowels_index = 0
 
     for letter in name_code:
-        if letter != " ":
-            if letter == "C":
-                name += consonants_sample[consonants_index]
-                consonants_index += 1
-            else:
-                name += vowels_sample[vowels_index]
-                vowels_index += 1
+        if letter == " ":
+            pass
+        elif letter == "C":
+            name += consonants_sample[consonants_index]
+            consonants_index += 1
+        else:
+            name += vowels_sample[vowels_index]
+            vowels_index += 1
 
     return (name + choice(suffix)).capitalize()
 
 
 if __name__ == "__main__":
-    for generated in range(0, 100):
+    for _ in range(100):
         print(generate_name())

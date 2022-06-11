@@ -74,5 +74,5 @@ def generate_name() -> str:
 
 
 if __name__ == "__main__":
-    for _ in range(0, 100):
+    for _ in range(0, 10):
         print(generate_name())

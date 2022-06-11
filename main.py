@@ -4,6 +4,7 @@ from random import randint, choice
 def generate_name() -> str:
     consonants: list[str] = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w',
                              'x', 'y', 'z']
+
     vowels: list[str] = ['a', 'e', 'i', 'o', 'u']
 
     with open("suffix.txt", 'r') as file:
@@ -55,8 +56,8 @@ def generate_name() -> str:
 
     name: str = ""
 
-    consonants_sample = [choice(consonants) for i in range(4)]
-    vowels_sample = [choice(vowels) for i in range(4)]
+    consonants_sample = [choice(consonants) for _ in range(4)]
+    vowels_sample = [choice(vowels) for _ in range(4)]
     consonants_index = 0
     vowels_index = 0
 
@@ -73,5 +74,5 @@ def generate_name() -> str:
 
 
 if __name__ == "__main__":
-    for generated in range(0, 100):
+    for _ in range(0, 100):
         print(generate_name())

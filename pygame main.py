@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import *
 from button import Button
+from rectangle import Rectangle, NameRect
 
 # SCREEN
 screen_height = 500
@@ -25,7 +26,22 @@ gen_button = Button(button_position_x, button_position_y, gen_img, screen)
 
 # NAME BOX
 name_box = pygame.Rect(20, 20, screen_width - 40, (screen_height - 40) / 2)
-color = pygame.Color(255, 0, 0)
+name_box_obj = Rectangle(screen, name_box)
+
+# INDIVIDUAL NAME BOXES
+new_box_height = name_box.height / 5
+new_box_width = name_box.width / 3
+
+name_boxes = []
+rows = 5
+columns = 3
+for row in range(rows):
+    for column in range(columns):
+        new_rect = pygame.Rect(column * new_box_width + 20, row * new_box_height + 20, new_box_width, new_box_height)
+        name_boxes.append(NameRect(screen, new_rect, row, column, name_box))
+
+# BOX COLOR
+color = pygame.Color(1, 50, 32)
 
 running = True
 
@@ -34,6 +50,9 @@ while running:
     screen.fill((255, 255, 255))
 
     pygame.draw.rect(screen, color, name_box, 2)
+
+    for box in name_boxes:
+        pygame.draw.rect(screen, color, box, 1)
 
     gen_button.draw()
 
@@ -44,12 +63,12 @@ while running:
             running = False
 
         elif event.type == WINDOWRESIZED:
-            screen_width = screen.get_width()
-            screen_height = screen.get_height()
-
             gen_button.update_position()
 
-            name_box.update(20, 20, screen_width - 40, (screen_height - 40) / 2)
+            name_box_obj.update_position()
+
+            for box in name_boxes:
+                box.update_position()
 
         elif event.type == MOUSEBUTTONDOWN:
             if gen_button.rect.collidepoint(pos):

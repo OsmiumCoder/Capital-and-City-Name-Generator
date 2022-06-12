@@ -12,7 +12,7 @@ pygame.display.set_caption("Capital and City Name Generator")
 
 # FONT
 pygame.font.init()
-font = pygame.font.Font("NuosuSIL-Regular.ttf", 20)
+font = pygame.font.Font("Assets/NuosuSIL-Regular.ttf", 20)
 
 # IMAGES
 gen_img = pygame.image.load('Assets/generate-button.png').convert_alpha()

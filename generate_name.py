@@ -7,7 +7,7 @@ def generate_name() -> str:
 
     vowels: list[str] = ['a', 'e', 'i', 'o', 'u']
 
-    with open("suffix.txt", 'r') as file:
+    with open("Assets/suffix.txt", 'r') as file:
         suffix: list[str] = [line.strip() for line in file]
 
     name_dict = {

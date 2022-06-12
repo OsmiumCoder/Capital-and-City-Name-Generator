@@ -1,7 +1,6 @@
 import pygame
 from pygame.locals import *
 from button import Button
-from rectangle import Rectangle
 from name import Name
 
 # SCREEN
@@ -20,13 +19,10 @@ gen_img_height = gen_img.get_height()
 gen_img_width = gen_img.get_width()
 
 # BUTTON
-button_position_x = screen_width / 2 - gen_img_width / 2
-button_position_y = screen_height / 2 - gen_img_height / 2 + screen_height / 4
-gen_button = Button(button_position_x, button_position_y, gen_img, screen)
+gen_button = Button(gen_img, screen)
 
 # NAME BOX
 name_box_container = pygame.Rect(20, 20, screen_width - 40, (screen_height - 40) / 2)
-name_box_obj = Rectangle(screen, name_box_container)
 
 # BOX COLOR
 color = pygame.Color(1, 50, 32)
@@ -60,9 +56,9 @@ while running:
             running = False
 
         elif event.type == WINDOWRESIZED:
-            gen_button.update_position()
-
-            name_box_obj.update_position()
+            screen_width = screen.get_width()
+            screen_height = screen.get_height()
+            name_box_container.update(20, 20, screen_width - 40, (screen_height - 40) / 2)
 
         elif event.type == MOUSEBUTTONDOWN:
             if gen_button.rect.collidepoint(pos):

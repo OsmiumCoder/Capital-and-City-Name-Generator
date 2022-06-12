@@ -11,12 +11,12 @@ class Name:
         self.screen = screen
 
     def write_name(self):
-        new_name_height = self.name_box.height / 5
-        new_name_width = self.name_box.width / 3
+        name_height_position = self.name_box.height / 5
+        name_width_position = self.name_box.width / 3
 
         text_surface = self.font.render(self.text, True, (255, 0, 0))
-        text_x = self.column * new_name_width + 20 + text_surface.get_width() / 2
-        text_y = self.row * new_name_height + 20 + text_surface.get_height() / 2
+        text_x = self.column * name_width_position + 20 + text_surface.get_width() / 2
+        text_y = self.row * name_height_position + 20 + text_surface.get_height() / 2
 
         self.screen.blit(text_surface, (text_x, text_y))
 

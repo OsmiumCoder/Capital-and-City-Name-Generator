@@ -1,5 +1,5 @@
 # Capital-and-City-Name-Generator
-A weekend project for a Fantasy Name Generator
+A weekend project for a Fantasy Name Generator.
 
 ## Description
 The Capital and City Name Generator was designed as a short project to solve the issue of uninteresting name generators
@@ -11,4 +11,42 @@ generator is rather simple by choosing random consonants and vowels to construct
 list of suffixes. The main script utilizes the generator to generate and output 15 names to the pygame screen.
 
 ## Visuals
-![](Assets/screenshot of generated names.png)
+![Generated Names](Assets/README Screenshots/screenshot of generated names.png)
+
+## Installation
+In order to properly run this program Python will need to be installed. You can download Python for free from their
+official website [here](https://www.python.org/downloads/).
+
+After Python has been downloaded click the green code button in the GitHub Repository and **Download Zip**.
+
+Once the zip file has been downloaded extract all to the destination of your choice.
+
+In the extracted folder will be a shortcut which you can drag to your desktop. If you would like to change the shortcut
+icon see [SHORTCUT INSTRUCTIONS](Documentation/SHORTCUT%20INSTRUCTIONS.md) under the Documentation folder.
+
+
+
+## Usage
+Once you have the application open and running click the red button to generate a list of 15 names in the display box.
+
+## Support
+Ways you can reach me:
+- placeholder
+- placeholder
+- placeholder
+
+## Roadmap
+Planned Changes:
+1. Add additional suffixes to existing library
+2. Add a prefix library
+3. Rework name generation to create names with pronounceable prefixes
+
+## Contributing
+Pull requests are welcome, though may not always be accepted. For major changes, please open an issue first to discuss 
+what you would like to change.
+
+## Authors and acknowledgment
+
+
+## License
+_Capital-and-City-Name-Generator_ falls under the [MIT](https://choosealicense.com/licenses/mit/) license

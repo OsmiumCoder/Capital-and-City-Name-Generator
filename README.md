@@ -24,7 +24,10 @@ Once the zip file has been downloaded extract all to the destination of your cho
 In the extracted folder will be a shortcut which you can drag to your desktop. If you would like to change the shortcut
 icon see [SHORTCUT INSTRUCTIONS](Documentation/SHORTCUT%20INSTRUCTIONS.md) under the Documentation folder.
 
+After you have dragged the shortcut to your desktop double-click it. A prompt will then display asking what you want to
+use to open **.pyw** files. **IMPORTANT**: You must select the python interpreter and not an IDE for it too properly run.
 
+The shortcut should now be configured to be used at anytime.
 
 ## Usage
 Once you have the application open and running click the red button to generate a list of 15 names in the display box.
@@ -46,7 +49,7 @@ Pull requests are welcome, though may not always be accepted. For major changes,
 what you would like to change.
 
 ## Authors and acknowledgment
-
+Me: [Jonathon Meney](https://github.com/OsmiumCoder)
 
 ## License
 _Capital-and-City-Name-Generator_ falls under the [MIT](https://choosealicense.com/licenses/mit/) license

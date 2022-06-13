@@ -11,3 +11,4 @@ generator is rather simple by choosing random consonants and vowels to construct
 list of suffixes. The main script utilizes the generator to generate and output 15 names to the pygame screen.
 
 ## Visuals
+![](Assets/screenshot of generated names.png)

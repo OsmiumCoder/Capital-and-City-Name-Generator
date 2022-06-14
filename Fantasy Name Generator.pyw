@@ -11,6 +11,14 @@ from functionals.objects.name import Name
 
 
 def main():
+    """
+    Main Script to be run.
+
+    Returns
+    -------
+    None
+
+    """
     # SCREEN
     screen_height = 600
     screen_width = 1000

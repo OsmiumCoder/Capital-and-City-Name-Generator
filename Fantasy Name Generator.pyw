@@ -94,7 +94,7 @@ def main():
             elif event.type == WINDOWRESIZED:
                 screen_width = screen.get_width()
                 screen_height = screen.get_height()
-                
+
                 name_box_container.update(20, 20, screen_width - 40, (screen_height - 40) / 2)
 
             # if the user clicks

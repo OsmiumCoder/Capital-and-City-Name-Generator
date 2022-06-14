@@ -35,15 +35,15 @@ Once you have the application open and running click the red button to generate 
 
 ## Support
 Ways you can reach me:
-- placeholder
-- placeholder
-- placeholder
+- [Join the discord server](https://discord.gg/mTyQrpFFxY)
+- Start a discussion in the discussion tab of the repository
+- [Or send me a DM on Twitter](https://twitter.com/Jonathon_Meney)
 
 ## Roadmap
 Planned Changes:
 1. Add additional suffixes to existing library
 2. Add a prefix library
-3. Rework name generation to create names with pronounceable prefixes
+3. Rework name generation to create names with more pronounceable prefixes
 
 ## Contributing
 Pull requests are welcome, though may not always be accepted. For major changes, please open an issue first to discuss 

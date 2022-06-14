@@ -15,9 +15,15 @@ list of suffixes. The main script utilizes the generator to generate and output 
 
 ## Installation
 In order to properly run this program Python will need to be installed. You can download Python for free from their
-official website [here](https://www.python.org/downloads/).
+official website [here](https://www.python.org/downloads/). **IMPORTANT**: Python must be installed for all users and
+**MUST** be added to the PATH.
 
-After Python has been downloaded click the green code button in the GitHub Repository and **Download Zip**.
+Now open the command terminal and enter the following _pip_ command:
+```commandline
+pip install pygame
+```
+
+After Python and pygame have been downloaded click the green code button in the GitHub Repository and **Download Zip**.
 
 Once the zip file has been downloaded extract all to the destination of your choice.
 

@@ -63,14 +63,18 @@ class Name:
         None
 
         """
-        name_height_position = self.name_box.height / 5
+        # calculate the distance between each name in both X and Y planes
         name_width_position = self.name_box.width / 3
+        name_height_position = self.name_box.height / 5
 
+        # render the text into a Surface
         text_surface = self.font.render(self.name, True, (0, 0, 0))
-        text_rect = text_surface.get_rect()
-        text_x = self.column * name_width_position + text_rect.x + 20 + name_width_position / 3 + name_width_position / 13
-        text_y = self.row * name_height_position + text_rect.y + 20 + name_height_position / 5
 
+        # calculate the X and Y position for the text to be displayed
+        text_x = 20 + self.column * name_width_position + name_width_position / 3 + name_width_position / 10
+        text_y = 20 + self.row * name_height_position + name_height_position / 5 + name_height_position / 17
+
+        # draw the text to the screen at its calculated position
         self.screen.blit(text_surface, (text_x, text_y))
 
     def change_name(self, name):

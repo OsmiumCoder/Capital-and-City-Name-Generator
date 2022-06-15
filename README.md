@@ -42,7 +42,7 @@ Once you have the application open and running click the red button to generate 
 ## Support
 Ways you can reach me:
 - [Join the discord server](https://discord.gg/mTyQrpFFxY)
-- Start a discussion in the discussion tab of the repository
+- [Start a discussion in the discussion tab of the repository](https://github.com/OsmiumCoder/Capital-and-City-Name-Generator/discussions)
 - [Or send me a DM on Twitter](https://twitter.com/Jonathon_Meney)
 
 ## Roadmap

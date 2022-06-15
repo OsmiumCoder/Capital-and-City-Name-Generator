@@ -50,6 +50,7 @@ Planned Changes:
 1. Add additional suffixes to existing library
 2. Add a prefix library
 3. Rework name generation to create names with more pronounceable prefixes
+4. Possibly add type hinting in more places
 
 ## Contributing
 Pull requests are welcome, though may not always be accepted. For major changes, please open an issue first to discuss 

@@ -51,7 +51,8 @@ Planned Changes:
 2. Add additional suffixes to existing library
 3. Add a prefix library
 4. Rework name generation to create names with more pronounceable prefixes
-5. Possibly add type hinting in more places
+5. Add a generic city description generator
+6. Possibly add type hinting in more places
 
 ## Contributing
 Pull requests are welcome, though may not always be accepted. For major changes, please open an issue first to discuss 

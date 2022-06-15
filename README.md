@@ -47,10 +47,11 @@ Ways you can reach me:
 
 ## Roadmap
 Planned Changes:
-1. Add additional suffixes to existing library
-2. Add a prefix library
-3. Rework name generation to create names with more pronounceable prefixes
-4. Possibly add type hinting in more places
+1. Revamp prefix code dictionary to function like a binary number
+2. Add additional suffixes to existing library
+3. Add a prefix library
+4. Rework name generation to create names with more pronounceable prefixes
+5. Possibly add type hinting in more places
 
 ## Contributing
 Pull requests are welcome, though may not always be accepted. For major changes, please open an issue first to discuss 

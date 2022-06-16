@@ -1,4 +1,6 @@
-from random import randint, choice
+from random import choice
+
+from functionals.generator.prefix_code_gen import prefix_code_gen
 
 
 def generate_name() -> str:
@@ -20,56 +22,15 @@ def generate_name() -> str:
     with open("Assets/suffix.txt", 'r') as file:
         suffix: list[str] = [line.strip() for line in file]
 
-    # name prefix combination codes
+    # generate list of name prefix combination codes
+    # function returns a list of name codes
+    # from length 2 to 5 consisting of C and V
     # C stands for a consonant
     # V stands for a vowel
-    # spaces in the value are only to improve readability
-    name_dict = {
-        # 4 LETTER COMBO
-        # CC start
-        1: "CC CC",
-        2: "CC CV",
-        3: "CC VC",
-        4: "CC VV",
-        # CV start
-        5: "CV CC",
-        6: "CV CV",
-        7: "CV VC",
-        8: "CV VV",
-        # VC start
-        9: "VC CC",
-        10: "VC CV",
-        11: "VC VC",
-        12: "VC VV",
-        # VV start
-        13: "VV CC",
-        14: "VV CV",
-        15: "VV VC",
-        16: "VV VV",
+    name_codes = prefix_code_gen()
 
-        # 3 LETTER COMBO
-        # C start
-        17: "C CC",
-        18: "C CV",
-        19: "C VC",
-        20: "C VV",
-        # V start
-        21: "V CC",
-        22: "V CV",
-        23: "V VC",
-        24: "V VV",
-
-        # 2 LETTER COMBO
-        25: "CC",
-        26: "CV",
-        27: "VC",
-        28: "VV",
-    }
-
-    # generate a random prefix key
-    name_type = randint(1, len(name_dict))
-    # get the value of the random key
-    name_code = name_dict[name_type]
+    # generate a random name code
+    name_code = choice(name_codes)
 
     prefix: str = ""
 

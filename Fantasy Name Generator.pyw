@@ -66,7 +66,7 @@ def main():
     # so long as we haven't quit run the main game loop
     while running:
 
-        screen.fill((255, 255, 255))  # maintain a white background every loop
+        screen.fill((179, 229, 252))  # maintain a light blue background every loop
 
         # draw the name box Rect to the screen Surface
         # border thickness of 2

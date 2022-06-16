@@ -109,3 +109,8 @@ def main():
         update()  # update graphics each loop
 
     quit()  # quits pygame
+
+
+if __name__ == "__main__":
+    print(__name__)
+    main()

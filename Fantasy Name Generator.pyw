@@ -5,9 +5,9 @@ from pygame.display import set_mode, set_caption, set_icon, update
 from pygame.font import init, Font
 from pygame.image import load
 
-from functionals.generator.generate_name import generate_name
-from functionals.objects.button import Button
-from functionals.objects.name import Name
+from data.functionals.generator.generate_name import generate_name
+from data.functionals.objects.button import Button
+from data.functionals.objects.name import Name
 
 
 def main():
@@ -27,17 +27,17 @@ def main():
     screen = set_mode((screen_width, screen_height), RESIZABLE)
     # sets the title of the displayed window
     set_caption("Capital and City Name Generator")
-    icon = load("assets/scroll-icon-game-screen.png")
+    icon = load("data/assets/scroll-icon-game-screen.png")
     set_icon(icon)
 
     # FONT
     init()  # initialize the font module to use its functions
     # create a Font object and initialize font type and default size
-    font = Font("assets/NuosuSIL-Regular.ttf", 15)
+    font = Font("data/assets/NuosuSIL-Regular.ttf", 15)
 
     # IMAGES
     # loads the generate button image as a Surface to be drawn
-    gen_img = load('assets/generate-button.png').convert_alpha()
+    gen_img = load('data/assets/generate-button.png').convert_alpha()
 
     # BUTTON
     # create a Button object to draw the image to the screen Surface

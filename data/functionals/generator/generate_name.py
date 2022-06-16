@@ -1,6 +1,6 @@
 from random import choice
 
-from functionals.generator.prefix_code_gen import prefix_code_gen
+from data.functionals.generator.prefix_code_gen import prefix_code_gen
 
 
 def generate_name() -> str:
@@ -19,7 +19,7 @@ def generate_name() -> str:
     vowels: list[str] = ['a', 'e', 'i', 'o', 'u']
 
     # construct a list from the file of suffixes
-    with open("assets/suffix.txt", 'r') as file:
+    with open("data/assets/suffix.txt", 'r') as file:
         suffix: list[str] = [line.strip() for line in file]
 
     # generate list of name prefix combination codes

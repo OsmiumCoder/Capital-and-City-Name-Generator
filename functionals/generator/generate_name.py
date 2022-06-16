@@ -34,10 +34,10 @@ def generate_name() -> str:
 
     prefix: str = ""
 
-    # get a samples of 4 consonants and 4 vowels
-    # any given name code will not be longer than 4 of one letter type
-    consonants_sample = [choice(consonants) for _ in range(4)]
-    vowels_sample = [choice(vowels) for _ in range(4)]
+    # get a samples of 5 consonants and 5 vowels
+    # any given name code will not be longer than 5 of one letter type
+    consonants_sample = [choice(consonants) for _ in range(5)]
+    vowels_sample = [choice(vowels) for _ in range(5)]
 
     # use to count how many consonants or vowels have been used
     consonants_index = 0

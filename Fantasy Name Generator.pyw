@@ -1,7 +1,7 @@
 from pygame import quit, Rect, Color, draw, mouse
 from pygame import event as ev
 from pygame.locals import *
-from pygame.display import set_mode, set_caption, update
+from pygame.display import set_mode, set_caption, set_icon, update
 from pygame.font import init, Font
 from pygame.image import load
 
@@ -27,6 +27,8 @@ def main():
     screen = set_mode((screen_width, screen_height), RESIZABLE)
     # sets the title of the displayed window
     set_caption("Capital and City Name Generator")
+    icon = load("assets/scroll-icon-game-screen.png")
+    set_icon(icon)
 
     # FONT
     init()  # initialize the font module to use its functions

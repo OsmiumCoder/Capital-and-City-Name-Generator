@@ -11,7 +11,7 @@ generator is rather simple by choosing random consonants and vowels to construct
 list of suffixes. The main script utilizes the generator to generate and output 15 names to the pygame screen.
 
 ## Visuals
-![Generated Names](Assets/README-Screenshots/screenshot-of-generated-names.png)
+![Generated Names](assets/README-Screenshots/screenshot-of-generated-names.png)
 
 ## Installation
 In order to properly run this program Python will need to be installed. You can download Python for free from their
@@ -28,7 +28,7 @@ After Python and pygame have been downloaded click the green code button in the 
 Once the zip file has been downloaded extract all to the destination of your choice.
 
 In the extracted folder will be a shortcut which you can drag to your desktop. If you would like to change the shortcut
-icon to the custom icon go to the [SHORTCUT INSTRUCTIONS](Documentation/SHORTCUT%20INSTRUCTIONS.md) under the 
+icon to the custom icon go to the [SHORTCUT INSTRUCTIONS](documentation/SHORTCUT%20INSTRUCTIONS.md) under the 
 Documentation folder.
 
 After you have dragged the shortcut to your desktop double-click it. A prompt will then display asking what you want to

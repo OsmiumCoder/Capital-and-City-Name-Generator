@@ -31,11 +31,11 @@ def main():
     # FONT
     init()  # initialize the font module to use its functions
     # create a Font object and initialize font type and default size
-    font = Font("Assets/NuosuSIL-Regular.ttf", 15)
+    font = Font("assets/NuosuSIL-Regular.ttf", 15)
 
     # IMAGES
     # loads the generate button image as a Surface to be drawn
-    gen_img = load('Assets/generate-button.png').convert_alpha()
+    gen_img = load('assets/generate-button.png').convert_alpha()
 
     # BUTTON
     # create a Button object to draw the image to the screen Surface

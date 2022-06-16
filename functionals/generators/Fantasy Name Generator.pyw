@@ -5,7 +5,7 @@ from pygame.display import set_mode, set_caption, update
 from pygame.font import init, Font
 from pygame.image import load
 
-from functionals.generator.generate_name import generate_name
+from functionals.generators.generate_name import generate_name
 from functionals.objects.button import Button
 from functionals.objects.name import Name
 

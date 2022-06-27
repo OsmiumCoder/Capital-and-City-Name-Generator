@@ -14,8 +14,8 @@ def prefix_code_gen():
     prefix_codes = []
 
     # first loop determines length of prefix code
-    # going from length 2 to length 5
-    for i in range(2, 6):
+    # going from length 2 to length 4
+    for i in range(2, 5):
         # loop through all the prefix codes of the current length
         # joining each tuple
         for j in product(["C", "V"], repeat=i):

@@ -24,7 +24,7 @@ def generate_name() -> str:
 
     # generate list of name prefix combination codes
     # function returns a list of name codes
-    # from length 2 to 5 consisting of C and V
+    # from length 2 to 4 consisting of C and V
     # C stands for a consonant
     # V stands for a vowel
     name_codes = prefix_code_gen()
@@ -36,8 +36,8 @@ def generate_name() -> str:
 
     # get a samples of 5 consonants and 5 vowels
     # any given name code will not be longer than 5 of one letter type
-    consonants_sample = [choice(consonants) for _ in range(5)]
-    vowels_sample = [choice(vowels) for _ in range(5)]
+    consonants_sample = [choice(consonants) for _ in range(len(name_code))]
+    vowels_sample = [choice(vowels) for _ in range(len(name_code))]
 
     # use to count how many consonants or vowels have been used
     consonants_index = 0

@@ -1,3 +1,5 @@
+import os.path
+import random
 from random import choice
 
 from data.functionals.generator.prefix_code_gen import prefix_code_gen

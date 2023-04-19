@@ -28,8 +28,7 @@ After Python and pygame have been downloaded click the green code button in the 
 Once the zip file has been downloaded extract all to the destination of your choice.
 
 In the extracted folder will be a shortcut which you can drag to your desktop. If you would like to change the shortcut
-icon to the custom icon go to the [SHORTCUT INSTRUCTIONS](data/documentation/SHORTCUT%20INSTRUCTIONS.md) under the 
-Documentation folder.
+icon to the custom icon go to the [SHORTCUT INSTRUCTIONS](SHORTCUT%20INSTRUCTIONS.md) in the project folder.
 
 After you have dragged the shortcut to your desktop double-click it. A prompt will then display asking what you want to
 use to open **.pyw** files. **IMPORTANT**: You must select the python interpreter and not an IDE for it too properly run.
